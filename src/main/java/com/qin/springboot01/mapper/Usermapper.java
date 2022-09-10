@@ -2,6 +2,7 @@ package com.qin.springboot01.mapper;
 
 import com.qin.springboot01.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,5 +13,5 @@ public interface Usermapper {
 
     public List<User> findALL();
 
-    public List<User> findById(int id);
+    public List<User> findById(@Param("id") int id);
 }
