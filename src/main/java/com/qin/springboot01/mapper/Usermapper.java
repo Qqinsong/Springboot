@@ -11,4 +11,6 @@ import java.util.List;
 public interface Usermapper {
 
     public List<User> findALL();
+
+    public List<User> findById(int id);
 }
